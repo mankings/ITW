@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>GAMER</title>
+    <style>
+        .box {
+            position: absolute;
+            border: 1px black solid;
+            width: 100px;
+            height: 100px;
+        }
+
+        .red {
+
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;    
+        }
+    </style>
+    <script>
+        function shuffle() {
+            var r = document.getElementById("r");
+            var y = document.getElementById("y");
+            var b = document.getElementById("b");
+            var g = document.getElementById("g");
+
+            r.style.left = Math.floor(Math.random()* (window.innerWidth - 200) + 100) + "px";
+            r.style.top = Math.floor(Math.random()* (window.innerHeight - 200) + 100) + "px";
+            y.style.left = Math.floor(Math.random()* (window.innerWidth - 200) + 100) + "px";
+            y.style.top = Math.floor(Math.random()* (window.innerHeight - 200) + 100) + "px";
+            b.style.left = Math.floor(Math.random()* (window.innerWidth - 200) + 100) + "px";
+            b.style.top = Math.floor(Math.random()* (window.innerHeight - 200) + 100) + "px";
+            g.style.left = Math.floor(Math.random()* (window.innerWidth - 200) + 100) + "px";
+            g.style.top = Math.floor(Math.random()* (window.innerHeight - 200) + 100) + "px";
+        }
+
+        document.getElementById("r").onmouseover = info("r")
+
+        function info(e) {
+            var p1 = getElementById("p1");
+            var p2 = getElementById("p2");
+            var div = getElementById(e);
+
+            p1.innerHTML = "Top:" + parseStr(div.style.top);
+            p2.innerHTML = "Left:" + parseStr(div.style.left);
+        }
+    </script>
+</head>
+<body>  
+    <button type="button" onclick="shuffle()">Baralhar</button><br>
+    <p id="p1"></p><br>
+    <p id="p2"></p>
+    <div class="box red" id='r' onmouseenter="info('r')" style="left: 100px; top: 100px"></div>
+    <div class="box yellow" id='y' onmouseenter="info('y')" style="left: 200px; top:100px"></div>
+    <div class="box blue" id='b' onmouseenter="info('b')" style="left: 300px; top: 100px"></div>
+    <div class="box green" id='g' onmouseenter="info('g')" style="left: 400px; top: 100px"></div>
+</body>
+</html>

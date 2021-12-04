@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="utf-8">
+    <title>Javascript test file</title>
+    <script>
+        document.getElementById("panda");
+        var x = true;
+        function change() {
+            if(x) {
+                panda.style.backgroundImage = "url('images/1.jpeg')";
+                x = !x;
+            } else {
+                panda.style.backgroundImage = "url('images/panda.jpeg')";
+                x = !x;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>loles</h1>
+    <button type="button" onclick="change()">Click!</button>
+    <div class="container" id="panda" style="background: url('images/panda.jpeg') no-repeat center center; background-size: auto; min-height: 300px;"></div>
+</body>
+</html>

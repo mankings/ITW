@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript test file</title>
+    <script>
+        function calcula() {
+            var x = document.getElementById("op1");
+            var y = document.getElementById("op2");
+            var z = document.getElementById("res");
+            var o = document.getElementById("op");
+            if(o.value == 1)
+                z.value = parseFloat(x.value) + parseFloat(y.value);
+            else if(o.value == 2)
+                z.value = parseFloat(x.value) - parseFloat(y.value);
+            else if(o.value == 3)
+                z.value = parseFloat(x.value) * parseFloat(y.value);
+            else if(o.value == 4 && y.value != 0)
+                z.value = parseFloat(x.value) / parseFloat(y.value);
+            else if(o.value == 5 && y.value != 0)
+                z.value = Math.floor(parseFloat(x.value) / parseFloat(y.value));
+            else if(o.value == 6 && y.value != 0)
+                z.value = parseFloat(x.value) % parseFloat(y.value);
+            else if(y.value == 0)
+                z.value = "Error: Divide by 0";
+        }
+    </script>
+</head>
+<body>
+    <input id="op1" value="2" />
+    <select id="op">
+        <option value="1" selected="selected">+</option>
+        <option value="2">-</option>
+        <option value="3">*</option>
+        <option value="4">/</option>
+        <option value="5">//</option>
+        <option value="6">%</option>
+    </select>
+    <input id="op2" value="3" />
+    <input id="res" value=" " /><br />
+    <button onclick="calcula()">Calcular</button>
+</body>
+</html>

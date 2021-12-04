@@ -1,0 +1,25 @@
+body {
+    background: url('../images/netflixBackground.png') center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+h2 {
+  padding-left: 50px;
+  font-size: 32px;
+}
+
+h3 {
+  padding-left: 50px;
+  font-size: 24px;
+}
+
+.description {
+    font-size: 20px;
+}
+
+table {
+  width: 100%;
+}

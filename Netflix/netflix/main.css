@@ -1,0 +1,45 @@
+body {
+    background: url('../images/netflixBackground.png') center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+table {
+    overflow: hidden;
+}
+
+h2 {
+    padding-left: 50px;
+    font-size: 32px;
+}
+
+.pagination > li > a
+{
+    background-color: white;
+    color: red;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: darkred;
+    background-color: white;
+    border-color: whitesmoke;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: red;
+    border: solid 1px red;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: red;
+    border: solid 1px red;
+}

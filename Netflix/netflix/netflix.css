@@ -1,0 +1,53 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 52px 0 52px 0;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+a:hover {
+  color: whitesmoke;
+}
+
+.no-bg {
+  background-color: white 0;
+}
+
+.white-text {
+  color: whitesmoke;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  padding-left: 4%;
+  padding-right: 4%;
+  transform: translate(0, -50%);
+}
+
+.header {
+  padding-top: 70px;
+}
+
+.preview {
+  position: relative;
+  height: 150px;
+  width: 280px;
+}
+
+.gray-text {
+  color: gray;
+}
+
+.thead-font {
+  font-size: 20px;
+}
+
+tr.underline:hover > td:not(:last-child) {
+  text-decoration: underline;
+}

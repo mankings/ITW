@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Form</title>
+    <style>
+        body, input, select, textarea {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        input[type=submit], input[type=reset] { padding: 0.375rem 0.75rem; font-size: 1rem; }
+        select, input[type=text], input[type=password] { font-size: 1rem; border: 1px solid #ced4da; border-radius: 0.25rem; width: 100%; }
+        fieldset { border: solid 1px black; border-radius: 0.25rem; }
+    </style>
+</head>
+<body>
+    <h1>Informação Pessoal</h1>
+    <form name="PersonData" action="http://192.168.160.36/FormEcho.aspx" method="post">
+        <input type="hidden" name="FormName" value="UserForm" />
+        <table margin="auto">
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Informação Pessoal</legend>
+                        <label for="Curso">Curso:</label>
+                        <select name="Curso">
+                            <option value="1" selected="selected">Licenciatura em Engenharia Informática</option>
+                            <option value="2">Mestrado Integrado em Engenharia de Computadores e Telemática</option>
+                            <option value="3">Mestrado Integrado em Engenharia Eletrónica e Telecomunicações</option>
+                            <option value="4">Outro</option>
+                        </select>
+                        <label for="FirstName">Nome:</label>
+                        <input type="text" name="FirstName" placeholder="Nome" />
+                        <label for="LastName">Sobrenome:</label>
+                        <input type="text" name="LastName" placeholder="Sobrenome" />
+                        <label for="Password">Palavra-Passe:</label>
+                        <input type="password" name="Password" placeholder="Digite a palavra passe" />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Comentários:</legend>
+                        <textarea name="Comments" rows="4" cols="80" placeholder="Insira os seus comentários"></textarea>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Meio de Transporte:</legend>
+                        <input type="checkbox" name="vehicle" id="vehicle1" value="Bicicleta" />
+                        <label for="vehicle1">Bicicleta</label><br />
+                        <input type="checkbox" name="vehicle" id="vehicle2" value="Carro" />
+                        <label for="vehicle2">Carro</label><br />
+                        <input type="checkbox" name="vehicle" id="vehicle3" value="Comboio" />
+                        <label for="vehicle3">Comboio</label><br />
+                        <p></p>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Cor Preferida:</legend>
+                        <input type="radio" name="color" id="color1" value="red" />
+                        <label for="vehicle1">Vermelho</label><br />
+                        <input type="radio" name="color" id="color2" value="green" />
+                        <label for="vehicle2">Verde</label><br />
+                        <input type="radio" name="color" id="color3" value="blue" />
+                        <label for="vehicle3">Azul</label><br />
+                        <input type="radio" name="color" id="color4" value="other" />
+                        <label for="vehicle3">Outro</label><br />
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input name="Button" type="Submit" /><input type="reset" name="resetBtn" value="Reset" />
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>

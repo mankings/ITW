@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Homepage - Netflix API Usage Demo</title>
+    <link href="../content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../content/font-awesome.min.css" rel="stylesheet" />
+    <link href="netflix.css" rel="stylesheet" />
+    <style>
+        body {
+            background: url("../images/homepage.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #start-watching {
+            background-color: #e50914;
+            text-align: center;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark no-bg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" title="Netflix API Usage Demo@by jsp"><img src="../images/netflixLogo.png" height="100" class="d-inline-block align-top" alt="" loading="lazy"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="container-fluid centered">
+        <h1 class="white-text">Unlimited movies, TV shows, and more.</h1>
+        <button class="btn my-2 my-sm-0" type="button" id="start-watching" onclick="location.href='index.html'">Start Watching</button>
+    </div>
+    <nav class="navbar navbar-dark fixed-bottom bg-black" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-text small">&copy;ITW2020 - Introdução às Tecnologias Web</div>
+            <div class="navbar-right navbar-text small d-sm-none d-md-block"><a href="http://www.ua.pt" title="Universidade de Aveiro">Universidade de Aveiro</a></div>
+        </div>
+    </nav>
+
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/knockout-3.5.1.js"></script>
+</body>
+</html>
